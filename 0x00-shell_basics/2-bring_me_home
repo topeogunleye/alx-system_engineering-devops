@@ -1,0 +1,10 @@
+#!/bin/bash
+# This script changes the working directory to the user's home directory
+# without using any shell variables
+
+# Get the user's home directory from the /etc/passwd file
+# The home directory is the sixth field separated by colons
+home_dir=$(grep "^$USER:" /etc/passwd | cut -d: -f6)
+
+# Change the working directory to the home directory
+cd "$home_dir"

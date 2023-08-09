@@ -1,0 +1,5 @@
+#!/bin/bash
+# This script writes into the file ls_cwd_content the result of the command ls -la
+
+# Use > redirection operator to overwrite the file with the output of ls -la
+ls -la > ls_cwd_content

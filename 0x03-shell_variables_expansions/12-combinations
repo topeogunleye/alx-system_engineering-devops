@@ -1,2 +1,2 @@
 #!/bin/bash
-for x in {a..z};do for y in {a..z};do [ "$x$y" != "oo" ]&&echo "$x$y";done;done
+for a in {a..z}; do for b in {a..z}; do [ "$a$b" != "oo" ] && echo "$a$b"; done; done
